@@ -8,16 +8,18 @@ The first order of busiess was to build a standard to calculate carbon in softwa
 
 The SCI was adopted by ISO in 2024 becoming an industry standard.
 
-After creating multiple use case to demonstrate how to calculate carbon in software and the evolution of genAI," Tammy became inspired to create a solution. She wanted something that would:
+After creating multiple use cases to demonstrate how to calculate carbon in software and the evolution of genAI," Tammy became inspired to create a solution. She wanted something that would:
 
 1. Allow software architects to have AI analysis a software diagram.
 2. Understand the components of the diagram.
-3. Allow the developer to observe efficiency characters of the diagram.
-4. Calculate the SCI score and return it to the user along with recommendations of how to reduce the score.
+3. Allow the developer to observe utilization characteristics of the components in the diagram including CPU and Memory utilization data.
+4. Calculate the SCI score for each component of the diagram.
+5. Return a final aggregate number for all components of the diagram and return it to the user.
+6. Pass recommendations of how to reduce the score back to the user.
 
 ### Technical Planning Phase
 
-The solution must connect with agents existing in Azure AI Foundry named AZURE_AI_EMBODIED, AZURE_AI_ENERGY, AZURE_AI_SCI_ASSISTANT built on gpt4o modern with the latest version.
+The solution must connect with agents already existing in Azure AI Foundry named AZURE_AI_EMBODIED, AZURE_AI_ENERGY, AZURE_AI_SCI_ASSISTANT built on gpt4o modern with the latest version.
 
 ### User Experience Goals
 
@@ -28,8 +30,14 @@ The solution must connect with agents existing in Azure AI Foundry named AZURE_A
 ### Technical Specifications
 
 - Ability to upload diagrams with PDF or image formats.
+- Use Python along with Semantic Kernel and agentgroupchat for orchestraing agents results.
 - All interaction with the foundational model for follow up questions
-- Use a multi agent approach, using agents that have already been created in Azure AI Foundry.
+- Use a multi agent approach, using agents that have already been created in Azure AI Foundry along with their actions and knowledge.
+
+### Green Foundation Foundation Key Links
+The first link explains the SCI and contain use cases that will help you learn. The second link explains patterns, principles, and best practices for reduction.
+#### [SCI Explained](https://sci-guide.greensoftware.foundation/)
+#### [Patterns](https://patterns.greensoftware.foundation/)
 
 ### GitHub Copilot Chat
 

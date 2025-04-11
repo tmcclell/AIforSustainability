@@ -4,6 +4,8 @@ The system will have 3 existing agents that were created in Azure AI Foundry nam
 
 It should be one app.
 
-Use a Python virtual environment and install all python dependencies from file aiforsustainability/backend/requirements.txt in this workspace.
+Create a Python virtual environment at the root (AIForSustainability) and include all python dependencies from file backend/requirements.txt and frontend\requirements in this workspace.
 
+The frontend should use streamlit as the UI interface with dependencies such as PyPDF2 for uploading documents. It should also have MathJax to allow formatting the math calculations in the right format for the UI. It should have an input box for allowing the developer to interact with the foundation model. It should also have a spinner to indicate to the user that something is happening in the backend. Agents responses should be streamed back to the UI.
 
+The backend should use FastAPI and uvicorn so the frontend can make endpoint calls to it to trigger the agent activity. Use this link https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-chat?pivots=programming-language-python to create the code making sure to have the best termination strategy for the multi agents.

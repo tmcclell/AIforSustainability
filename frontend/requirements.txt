@@ -3,5 +3,4 @@ pydantic
 python-dotenv
 requests
 uuid
-time
-re
+PyPDF2
