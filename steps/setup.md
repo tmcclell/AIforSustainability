@@ -22,16 +22,7 @@ Don't proceed with the next activity until all of these steps are completed.
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the frontend for analysing a pdf or image file, extracting the text components and send the request payload to the backend. Use chat.py for this code.
- 
-  1. Use Streamlit to build the components.
-  2. Build the ui components for allowing a file upload.
-  3. Add an input box for user interaction with the model.
-  4. Build a agent endpoint using http://127.0.0.1:8005
-  5. Build a request that will post to the endpoint on the backend to receive the input of the diagram and anything from the input box.
-  6. Add a spinner to indicate when work is being done.
-  7. Add a nice title for the application - use AI for Sustainability.
-  8. Generate an image that represents the spirit of sustainability and display as the logo in the upper left corner. 
+  Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the frontend for analysing a pdf or image file, extracting the text components and send the request payload to the backend for an SCI calculation. Use chat.py for this code.
 
   Don't proceed with the next activity until all of these steps are completed.
  ```
@@ -41,22 +32,8 @@ Don't proceed with the next activity until all of these steps are completed.
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the api for sending a user request to the agents for evaluation. Use main.py for the backend code.
- 
-1. Setup the endpoint call to handle the input from the uploaded diagrams and input box.
-2. Create the code that:
-    - use FASTAPI for the server component
-    - include a Pydantic model for validating the request payload.
-    - sets up defaultazurecredentials for authenication
-    - add the Azure AI Foundry connection string in the .env named AZURE_AI_AGENT_PROJECT_CONNECTION_STRING
-    - add the model deployment name included in the .env named AZURE_AI_AGENT_MODEL_DEPLOYMENT_NAME
-    - use the semantic kernel imports that support agentgroupchat and azure ai agent.
-    - use the AzureAIAgent.create_client method to create a client connection to Azure AI Foundry.
-    - use the client.get_agent method to get all 3 existing agents (AZURE_AI_EMBODIED, AZURE_AI_ENERGY, AZURE_AI_SCI_ASSISTANT)
-    - puts the agents in a groupchat with a termination strategy of max iterations of 2
-    - streams the content to the ui. Ensure compatibility with FastAPI's streaming response.
-    - add exception handling
- 
+  Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the endpoint for sending a user request to the agents for evaluation. Use main.py for the backend code.
+
   Don't proceed with the next activity until all of these steps are completed.
  ```
 
@@ -65,7 +42,7 @@ Don't proceed with the next activity until all of these steps are completed.
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Configure logging at a INFO level.
+ 
   Review the code is any potential issues.
   
   Don't proceed with the next activity until all of these steps are completed.
