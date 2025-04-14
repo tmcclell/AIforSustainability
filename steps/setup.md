@@ -7,8 +7,7 @@
 ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 
 ```prompt
-Let's take the following step by step and generate instructions in this order and execute the commands.
-Use docs/application-requirements.md as a guide for the project structure and requirements.
+Let's take the following step by step and generate instructions in this order and execute the commands. Use docs/application-requirements.md as a guide for the project structure and requirements.
 
 1. Understand the story of calculating carbon in software from the docs/green-software-story.md file.
 2. All packages have been preinstalled.
@@ -25,13 +24,14 @@ Don't proceed with the next activity until all of these steps are completed.
   ```prompt
   Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the frontend for analysing a pdf or image file, extracting the text components and send the request payload to the backend. Use chat.py for this code.
  
-  1. Build the ui components for allowing a file upload.
-  2. Add an input box for user interaction with the model.
-  3. Build a agent endpoint using http://127.0.0.1:8005
-  4. Build a request that will post to the endpoint on the backend to receive the input of the diagram and anything from the input box.
-  5. Add a spinner to indicate when work is being done.
-  6. Add a nice title for the application - use AI for Sustainability.
-  7. Generate an image that represents the spirit of sustainability and display as the logo in the upper left corner. 
+  1. Use Streamlit to build the components.
+  2. Build the ui components for allowing a file upload.
+  3. Add an input box for user interaction with the model.
+  4. Build a agent endpoint using http://127.0.0.1:8005
+  5. Build a request that will post to the endpoint on the backend to receive the input of the diagram and anything from the input box.
+  6. Add a spinner to indicate when work is being done.
+  7. Add a nice title for the application - use AI for Sustainability.
+  8. Generate an image that represents the spirit of sustainability and display as the logo in the upper left corner. 
 
   Don't proceed with the next activity until all of these steps are completed.
  ```
@@ -45,6 +45,7 @@ Don't proceed with the next activity until all of these steps are completed.
  
 1. Setup the endpoint call to handle the input from the uploaded diagrams and input box.
 2. Create the code that:
+    - use FASTAPI for the server component
     - include a Pydantic model for validating the request payload.
     - sets up defaultazurecredentials for authenication
     - add the Azure AI Foundry connection string in the .env named AZURE_AI_AGENT_PROJECT_CONNECTION_STRING
@@ -68,12 +69,12 @@ Don't proceed with the next activity until all of these steps are completed.
   Review the code is any potential issues.
   
   Don't proceed with the next activity until all of these steps are completed.
+ ```
 
-  ### :keyboard: Activity: Start the frontend and backend services.
+### :keyboard: Activity: Start the frontend and backend services.
 
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Start the backend first.
-  Don't proceed to the next step until the backend has finished starting up.
-  Start the frontend.
+  Start the backend with uvicorn and have it run on port 8005.
+  Wait for the backend to start and then start the frontend.
