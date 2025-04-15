@@ -32,7 +32,7 @@ Don't proceed with the next activity until all of these steps are completed.
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Based on the example AI for Sustainability app in the docs/application-requirements.md file, let's build the endpoint for sending a user request to the agents for evaluation. Use main.py for the backend code.
+  Use the information in docs/application-requirements.md file for application requirements, build the endpoint for sending a user requests to the agents for evaluation. Use main.py for the backend code.
 
   Don't proceed with the next activity until all of these steps are completed.
  ```
