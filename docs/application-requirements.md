@@ -22,13 +22,13 @@ For the backend:
 2. Using the sample code build:
   -use FASTAPI and Uvicorn running on port 8005 for the server component
   -include a Pydantic model for validating the request payload.
-  -sets up defaultazurecredentials for authenication
+  -sets up defaultazurecredentials() for authenication
   -add the Azure AI Foundry connection string in the .env named AZURE_AI_AGENT_PROJECT_CONNECTION_STRING
   -add the model deployment name included in the .env named AZURE_AI_AGENT_MODEL_DEPLOYMENT_NAME
-  -create variables for all 3 existing agents defined in .env with names (AZURE_AI_EMBODIED, AZURE_AI_ENERGY, AZURE_AI_SCI_ASSISTANT)
-  -use the semantic kernel imports that support agentgroupchat and azure ai agent.
-  -puts the agents in a groupchat with a termination strategy of max iterations of 2
-  -streams the content to the ui. Ensure compatibility with FastAPI's streaming response.
+  -create variables for all 3 existing Azure AI Foundry agents defined in .env with names (AZURE_AI_EMBODIED, AZURE_AI_ENERGY, AZURE_AI_SCI_ASSISTANT)
+  -use the semantic kernel methods that support agentgroupchat and azure ai agent.
+  -put the agents in a groupchat with a termination strategy of max iterations of 10
+  -streams the response to the ui. Ensure compatibility with FastAPI's streaming response.
   -add exception handling
   -configure logging at a INFO level.
  
