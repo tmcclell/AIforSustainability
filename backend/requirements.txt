@@ -8,3 +8,4 @@ gunicorn
 azure-ai-vision-imageanalysis
 semantic-kernel
 semantic-kernel[azure]
+python-multipart

@@ -10,12 +10,11 @@
 Let's take the following step by step and generate instructions in this order and execute the commands. Use docs/application-requirements.md as a guide for the project structure and requirements.
 
 1. Understand the story of calculating carbon in software from the docs/green-software-story.md file.
-2. All packages have been preinstalled.
-3. Verify all packages have been installed. 
+2. Understand the requirements for the application from docs/application-requirements.md
+3. Read the .github/copilot-instructions.md
 
 Don't proceed with the next activity until all of these steps are completed.
 ```
-❕ **Important:** Once the above activity installs all the required packages, proceed to the next activity.
 
 ### :keyboard: Activity: Let's generate the frontend
 
@@ -32,12 +31,12 @@ Don't proceed with the next activity until all of these steps are completed.
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
   ```prompt
-  Use the information in docs/application-requirements.md file for application requirements, build the endpoint for sending a user requests to the agents for evaluation. Use main.py for the backend code.
+  Use the information in docs/application-requirements.md file for application requirements, build the endpoint for a multi agent solution. Use main.py for the backend code.
 
   Don't proceed with the next activity until all of these steps are completed.
  ```
 
-### :keyboard: Activity: Exception Handling & Logging
+### :keyboard: Activity: Double check the code - react
 
   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
  
@@ -54,4 +53,4 @@ Don't proceed with the next activity until all of these steps are completed.
  
   ```prompt
   Start the backend with uvicorn and have it run on port 8005.
-  Wait for the backend to start and then start the frontend.
+  Wait for the backend to start and then start the frontend with streamlit.
